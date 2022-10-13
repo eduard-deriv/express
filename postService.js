@@ -4,7 +4,7 @@ import fileUpload from "./fileUpload.js";
 class PostService {
     async create(post, picture) {
         const fileName = await fileUpload.saveFile(picture)
-        const createdPost = await PostModel.create({...post, picture: fileName});
+        const createdPost = await PostModel.create({...post, image: fileName});
         return createdPost;
     }
 

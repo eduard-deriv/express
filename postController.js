@@ -6,7 +6,7 @@ class PostController {
             const post = await postService.create(req.body, req.files.picture)
             res.json(post)
         } catch (e) {
-            res.status(500).json(e)
+            res.status(500).json(e.message)
         }
     }
     async getAll(req, res) {

@@ -1,10 +1,10 @@
 import express from "express"
 import mongoose from "mongoose"
-import postRouter from "./posts/postRouter.js"
+import postRouter from "./postRouter.js"
 import fileUpload from "express-fileupload";
 
-const PORT = 3006
-const DB_URL = 'mongodb+srv://ed:ed@cluster0.hfmcjzh.mongodb.net/?retryWrites=true&w=majority'
+const PORT = 3009
+const DB_URL = 'mongodb+srv://e:e@cluster0.u689o7h.mongodb.net/?retryWrites=true&w=majority'
 
 const app = express()
 app.use(express.json())
