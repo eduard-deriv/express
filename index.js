@@ -1,6 +1,6 @@
 import express from "express"
 import mongoose from "mongoose"
-import postRouter from "./postRouter.js"
+import postRouter from "./posts/postRouter.js"
 import fileUpload from "express-fileupload";
 
 const PORT = 3009
